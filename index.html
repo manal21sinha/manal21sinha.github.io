@@ -5,10 +5,10 @@
 	<body>
       <p id="para" style="font-size:200%"></p>
     	<script>
-        var url = window.location.href;
-        if (url.contains("?"))
+        var w = window.location.href;
+        if (w.contains("?i="))
         {
-          var value = url.split("=");
+          var value = w.split("=");
           document.getElementById("para").innerHTML = "Hello, device ID: " + value[1] + " B-)";
           document.getElementById("image").src = "get-pwned-you-must-thumb.jpg";
         }
