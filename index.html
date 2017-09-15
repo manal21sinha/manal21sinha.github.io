@@ -6,7 +6,7 @@
     <div id="left" style="float:left;">
       <p id="para"></p>
     	<script>
-          var value = window.location.href.slice(window.location.href.indexOf('='));
+          var value = window.location.href.split("=");
           document.getElementById("para").innerHTML = value[1];
       </script>
     </div>
