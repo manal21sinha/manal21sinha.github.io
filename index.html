@@ -6,7 +6,7 @@
       <p id="para" style="font-size:200%"></p>
     	<script>
         var url = window.location.href;
-        if (url.contains("="))
+        if (url.contains("?"))
         {
           var value = url.split("=");
           document.getElementById("para").innerHTML = "Hello, device ID: " + value[1] + " B-)";
