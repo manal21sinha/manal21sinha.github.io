@@ -3,11 +3,19 @@
 	<title>manal21sinha on github</title>
 	</head>
 	<body>
-	      <p id="para" style="font-size:200%"></p>
-		<script>
-		  var value = window.location.href.split("=");
-		  document.getElementById("para").innerHTML = "Hello, device ID: " + value[1] + " B-)";
-		</script>
-	      <img src="get-pwned-you-must-thumb.jpg" style="width:100%">
+      <p id="para" style="font-size:200%"></p>
+    	<script>
+          var value = window.location.href.split("=");
+          if (value[1] != "" || value[1] != null)
+          {
+            document.getElementById("para").innerHTML = "Hello, device ID: " + value[1] + " B-)";
+            document.getElementById("image").src = "get-pwned-you-must-thumb.jpg";
+          }
+          else {
+            document.getElementById("para").innerHTML = "Hello!";
+            document.getElementById("image").src = "giphy-downsized-simpsons.gif";
+          }
+      </script>
+      <img id="image" style="width=100%">
 	</body>
 </html>
