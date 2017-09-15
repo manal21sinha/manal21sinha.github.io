@@ -5,8 +5,8 @@
 	<body>
     <div id="left" style="float:left;">
     	<script>
-        var i = "<%=request.getParameter("i")%>"
-        document.getElementById("left").innerHTML = i;
+          var value = window.location.href.split(window.location.href.indexOf('='));
+          document.getElementById("left").innerHTML = value;
       </script>
     </div>
     <div id="right" style="float:right;">
