@@ -3,22 +3,22 @@
 	<title>manal21sinha on github</title>
 	</head>
 	<body>
-		<div>
+    <div>
       <p id="para" style="font-size:200%"></p>
     	<script>
         var w = window.location.href;
-        if (w.contains("?i="))
+        if (w.indexOf("?i=") != -1)
         {
           var value = w.split("=");
           document.getElementById("para").innerHTML = "Hello, device ID: " + value[1] + " B-)";
           document.getElementById("image").src = "get-pwned-you-must-thumb.jpg";
         }
         else {
-          document.getElementById("para").innerHTML = "Hello!";
+          document.getElementById("para").innerHTML = w;
           document.getElementById("image").src = "giphy-downsized-simpsons.gif";
         }
       </script>
       <img id="image" style="width=100%">
-		</div>
+    </div>
 	</body>
 </html>
