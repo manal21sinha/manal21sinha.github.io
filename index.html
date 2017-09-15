@@ -8,9 +8,9 @@
         var url = window.location.href;
         if (url.contains("="))
         {
-          var value = window.location.href.split("=");
+          var value = url.split("=");
           document.getElementById("para").innerHTML = "Hello, device ID: " + value[1] + " B-)";
-          document.getElementById("image").src = "get-pwned-you-must-thumb.jpg";  
+          document.getElementById("image").src = "get-pwned-you-must-thumb.jpg";
         }
         else {
           document.getElementById("para").innerHTML = "Hello!";
