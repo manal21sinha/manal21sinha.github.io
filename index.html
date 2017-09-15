@@ -5,16 +5,17 @@
 	<body>
       <p id="para" style="font-size:200%"></p>
     	<script>
+        var url = window.location.href;
+        if (url.contains("="))
+        {
           var value = window.location.href.split("=");
-          if (value[1] != "")
-          {
-            document.getElementById("para").innerHTML = "Hello, device ID: " + value[1] + " B-)";
-            document.getElementById("image").src = "get-pwned-you-must-thumb.jpg";
-          }
-          else {
-            document.getElementById("para").innerHTML = "Hello!";
-            document.getElementById("image").src = "giphy-downsized-simpsons.gif";
-          }
+          document.getElementById("para").innerHTML = "Hello, device ID: " + value[1] + " B-)";
+          document.getElementById("image").src = "get-pwned-you-must-thumb.jpg";  
+        }
+        else {
+          document.getElementById("para").innerHTML = "Hello!";
+          document.getElementById("image").src = "giphy-downsized-simpsons.gif";
+        }
       </script>
       <img id="image" style="width=100%">
 	</body>
